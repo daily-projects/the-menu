@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>The Menu</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="./styles.css" />
+</head>
+
+<body>
+  <div class="tabs">
+    <div class="tab">
+      <svg class="icon">
+        <use xlink:href="#event"></use>
+      </svg>
+    </div>
+    <div class="tab">
+      <svg class="icon">
+        <use xlink:href="#finance"></use>
+      </svg>
+    </div>
+    <div class="tab active">
+      <svg class="icon">
+        <use xlink:href="#cafe"></use>
+      </svg>
+    </div>
+    <div class="tab">
+      <svg class="icon">
+        <use xlink:href="#gift"></use>
+      </svg>
+    </div>
+    <div class="tab">
+      <svg class="icon">
+        <use xlink:href="#pets"></use>
+      </svg>
+    </div>
+  </div>
+  <div class="card">
+    <div class="card-picture">
+      <p class="title">Food</p>
+      <div class="location">
+        <img src="img/location.svg" alt="location">
+        <span>Madrid</span>
+      </div>
+    </div>
+    <div class="menu-list">
+      <p class="menu-list-name">Pizza</p>
+      <p class="menu-list-amount">17</p>
+    </div>
+    <div class="menu-list">
+      <p class="menu-list-name">Sushi</p>
+      <p class="menu-list-amount">9</p>
+    </div>
+    <div class="menu-list">
+      <p class="menu-list-name">Gournmet</p>
+      <p class="menu-list-amount">22</p>
+    </div>
+    <div class="menu-list">
+      <p class="menu-list-name">Burger</p>
+      <p class="menu-list-amount">14</p>
+    </div>
+  </div>
+
+
+
+
+
+  <!-- SVG Sprite -->
+  <svg width="0" height="0" class="hidden">
+    <symbol xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" id="cafe">
+      <path d="M0 0h24v24H0z" fill="none"></path>
+      <path d="M20 4H4v2h16V4zm1 10v-2l-1-5H4l-1 5v2h1v6h10v-6h4v6h2v-6h1zm-9 4H6v-4h6v4z"></path>
+    </symbol>
+    <symbol xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 24 24"
+      id="event">
+      <defs>
+        <path d="M0 0h24v24H0V0z" id="a"></path>
+      </defs>
+      <clipPath id="b">
+        <use overflow="visible" xlink:href="#a"></use>
+      </clipPath>
+      <path clip-path="url(#b)"
+        d="M4 18v3h3v-3h10v3h3v-6H4zm15-8h3v3h-3zM2 10h3v3H2zm15 3H7V5c0-1.1.9-2 2-2h6c1.1 0 2 .9 2 2v8z"></path>
+    </symbol>
+    <symbol xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" id="gift">
+      <path
+        d="M20 6h-2.18c.11-.31.18-.65.18-1 0-1.66-1.34-3-3-3-1.05 0-1.96.54-2.5 1.35l-.5.67-.5-.68C10.96 2.54 10.05 2 9 2 7.34 2 6 3.34 6 5c0 .35.07.69.18 1H4c-1.11 0-1.99.89-1.99 2L2 19c0 1.11.89 2 2 2h16c1.11 0 2-.89 2-2V8c0-1.11-.89-2-2-2zm-5-2c.55 0 1 .45 1 1s-.45 1-1 1-1-.45-1-1 .45-1 1-1zM9 4c.55 0 1 .45 1 1s-.45 1-1 1-1-.45-1-1 .45-1 1-1zm11 15H4v-2h16v2zm0-5H4V8h5.08L7 10.83 8.62 12 11 8.76l1-1.36 1 1.36L15.38 12 17 10.83 14.92 8H20v6z">
+      </path>
+      <path d="M0 0h24v24H0z" fill="none"></path>
+    </symbol>
+    <symbol xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" id="finance">
+      <path d="M0 0h24v24H0z" fill="none"></path>
+      <path d="M4 10v7h3v-7H4zm6 0v7h3v-7h-3zM2 22h19v-3H2v3zm14-12v7h3v-7h-3zm-4.5-9L2 6v2h19V6l-9.5-5z"></path>
+    </symbol>
+    <symbol xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" id="pets">
+      <circle cx="4.5" cy="9.5" r="2.5"></circle>
+      <circle cx="9" cy="5.5" r="2.5"></circle>
+      <circle cx="15" cy="5.5" r="2.5"></circle>
+      <circle cx="19.5" cy="9.5" r="2.5"></circle>
+      <path
+        d="M17.34 14.86c-.87-1.02-1.6-1.89-2.48-2.91-.46-.54-1.05-1.08-1.75-1.32-.11-.04-.22-.07-.33-.09-.25-.04-.52-.04-.78-.04s-.53 0-.79.05c-.11.02-.22.05-.33.09-.7.24-1.28.78-1.75 1.32-.87 1.02-1.6 1.89-2.48 2.91-1.31 1.31-2.92 2.76-2.62 4.79.29 1.02 1.02 2.03 2.33 2.32.73.15 3.06-.44 5.54-.44h.18c2.48 0 4.81.58 5.54.44 1.31-.29 2.04-1.31 2.33-2.32.31-2.04-1.3-3.49-2.61-4.8z">
+      </path>
+      <path d="M0 0h24v24H0z" fill="none"></path>
+    </symbol>
+  </svg>
+</body>
+
+</html>
